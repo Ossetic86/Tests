@@ -1,0 +1,8 @@
+// Создание базы данных
+CREATE DATABASE IF NOT EXISTS InLineTest
+
+// Создание таблицы записей
+CREATE TABLE IF NOT EXISTS posts (userId INT, id INT PRIMARY KEY AUTO_INCREMENT, title CHAR (100), body TINYTEXT)
+
+// Создание таблицы комментариев
+CREATE TABLE IF NOT EXISTS comments (postId INT, id INT PRIMARY KEY AUTO_INCREMENT, name CHAR (100), email CHAR (50), body TINYTEXT)
